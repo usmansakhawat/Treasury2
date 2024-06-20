@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore - Treasury Works Portal</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://treasuryworks.com/apple-touch-icon.png">
+    <link rel="icon" href="https://treasuryworks.com/favicon.ico?v=1bqroQma7aYBkn623A7KP3oNh2dLXvM83FVNRBH8rkc">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=pJbualUhOvWI75vyyxlvGIGHJVzAVkBa3Mq9k5JwvD8">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=Aiq_Qi3OGikRtIm9M2m-CDV7QUyIqOSyctQLRj9fEGQ">
+    <link rel="stylesheet" href="https://treasuryworks.com/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://treasuryworks.com/lib/DataTables/datatables.min.css" rel="stylesheet">
+    <link href="https://treasuryworks.com/lib/DataTables/Responsive-2.5.0/css/responsive.dataTables.min.css" />
+    <link href="https://treasuryworks.com/lib/DataTables/DataTables-1.13.6/js/jquery.dataTables.min.js" />
+    <link rel="stylesheet" href="https://treasuryworks.com/lib/jquery-ui-1.13.2/jquery-ui.min.css" /> 
+    <link rel="stylesheet" href="/Explore/css/ExploreStyle.css" />
+    <!-- <link rel="stylesheet" href="https://treasuryworks.com/lib/cdn.datatables.net" /> -->
+     <!-- bootsrap cnd -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://treasuryworks.com/lib/swiper/package/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://treasuryworks.com/TW.Web.styles.css?v=TSrTn9L7y5UFiPtbFdCOuVjz8B9HyWM-2OB4LCrQMOc" />
+    <link rel="stylesheet" href="https://treasuryworks.com/lib/DataTables/datatables.css" />
+    <link rel="stylesheet" href="https://treasuryworks.com/css/site.css?v=JRGscrCkTfyPDY6D0A89YtzZ8plcy9Usj9SOi3gR-8U" />
+
+</head>
+<body>
+    <!-- <header b-9776f52uie>
+        <nav b-9776f52uie class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow fixed-top">
+            <div b-9776f52uie class="container">
+                <a class="navbar-brand" href="/"><img class="nav_logo" src="https://treasuryworks.com/Image/treasuryworks_logo.svg" alt="treasuryworks_logo" /></a>
+                <button b-9776f52uie class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-9776f52uie class="navbar-toggler-icon"></span>
+                </button>
+                <div b-9776f52uie class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul b-9776f52uie class="navbar-nav flex-grow-1">
+                        <li b-9776f52uie class="nav-item">
+                            <a class="nav-link text-dark" href="/Privacy">Privacy</a>
+                        </li>
+                      
+                            <li b-9776f52uie class="nav-item">
+                                <a class="nav-link text-dark" href="/Login">Login</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://treasuryworks.com/Image/treasuryworks_logo.svg" alt="Treasury Works Logo" height="40">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn adminLoginBtn" href="#"><img src="../Image/Group 5433.svg" alt=""> Admin Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="container">
+        <div class="dashboard-form">
+            <nav class="navbar">
+                <a class="navbar-brand w-25 mb-3 h-auto" href="/">
+                    <img src="https://treasuryworks.com/Image/treasuryworks_logo.svg" alt="company_logo" class="d-inline-block align-top">
+                </a>
+                <ul class="nav justify-content-end mb-4">
+                    <li class="nav-item">
+                        <a href="https://treasuryworks.com/Login" title="click for admin portal." class="nav-link text-dark">Admin Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section> -->
+    <div b-9776f52uie class="fluid-container">
+        <main b-9776f52uie role="main" class="mainContainer mt-0" >
+                    <div class="fluid-container">
+            <div class="row p-0 m-0">
+                <div class="d-flex flex-row min-vh-100 p-0">
+                <div class="homeImgContainer d-none d-lg-block col-lg-4">
+                    <div class="homeImgContentCont d-flex justify-content-between">
+                        <div class="logos">
+                            <img src="https://treasuryworks.com/Image/treasuryworks_logo.svg" alt="app_logo" class="appLogo grLogo"/>
+                    <img src="https://treasuryworks.com/Image/dicip_logo.svg" alt="app_logo" class="logoDesign" />
+                    <div class="navbar">
+                        <div class="hamburger-menu" onclick="toggleDropdown()">
+                            ☰
+                        </div>
+                        <div class="dropdown-content" id="dropdownContent">
+                          <a href="#">Privacy</a>
+                          <a href="#">Login</a>
+                        </div>
+                      </div>
+                    <!-- <button class="hamburger-menu" onclick="toggleMenu1()">☰</button> -->
+                    <!-- <button class="hamburger-menu" onclick="toggleMenu1()">hi</button>
+                    
+                   
+                    <select id="dropdownMenuww1" class="dropdown-menuww1">
+                        <option class="" href="#">Privacy</option> 
+                        <option class="" href="#">Privacy</option> 
+                        <a class="" href="#">Login</a>
+                    </select> -->
+                            <!-- <img src="https://treasuryworks.com/Image/treasuryworks_logo.svg" alt="app_logo" class="appLogo grLogo"/>
+                            <img src="https://treasuryworks.com/Image/dicip_logo.svg" alt="app_logo" class="logoDesign" />
+                            <button class="hamburger-menu" onclick="toggleMenu1()">☰</button>
+                                
+                            <div id="dropdownMenu" class="dropdown-menu">
+                                <a class="nav-link text-dark" href="#">Privacy</a>
+                                <a class="nav-link text-dark" href="#">Login</a>
+                            </div> -->
+                           
+                            <!-- <a class="nav-link text-dark" href="https://treasuryworks.com/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" href="https://treasuryworks.com/Login">Login</a> -->
+                            <!-- <ul b-9776f52uie class="navbar-nav">
+                                <li b-9776f52uie class="nav-item">
+                                    <a class="nav-link text-dark" href="/Privacy">Privacy</a>
+                                </li>
+                              
+                                    <li b-9776f52uie class="nav-item">
+                                        <a class="nav-link text-dark" href="/Login">Login</a>
+                                    </li>
+                            </ul> -->
+                        </div>
+
+                        <h4 class="exploreHeader">Welcome to dicip</h4>
+                        <p class="exploreDesc">Your only kid task management tool</p>
+                        <!-- <button class="exploreBtn">Explore Dicip</button> -->
+                    </div>
+      
+                   </div>
+                <div class="col-12 col-sm-12 col-lg-6 homeContentCont">
+                        <div class="twContentCont">
+                           <h3 class="twHeader">
+                            Dicip: Empowering Teachers, Parents, and Students
+                            </h3>
+                            <p class="twDesc">
+                            Welcome to Dicip, where time management and focus are made simple! Our platform is designed to bring teachers, parents, and students together, making everyday tasks more manageable and goals more attainable. Transform the day and boost productivity with this must-have tool.
+                        </p>
+                            <div class="exploreCarouselCont">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="exploreCarouselCard  swiper-slide">
+                                            <div class="exploreContentCont">
+                                        <div class="exploreIconCont">
+                                            <img src="https://treasuryworks.com/Image/goal.svg" alt="goal_icon" />
+                                        </div>
+                                        <h5 class="exploreCardTitle">The Power of Setting Goals</h5>
+                                        <p class="exploreCardText">
+                                            In the world of parenting and education, setting clear goals is the foundation of success. Dicip empowers you to define clear objectives, creating a roadmap for success.
+                                        </p>
+                                        <p class="exploreCardText">
+                                            Whether you are a parent striving to balance work and family, a teacher aiming for classroom efficiency, or a student with academic and day-to-day responsibilities, our platform ensures you stay on track to achieve your aspirations
+                                        </p>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="exploreCarouselCard  swiper-slide">
+                                    <div class="exploreContentCont">
+                                         <div class="exploreIconCont">
+                                                <img src="https://treasuryworks.com/Image/prize.svg" alt="prize_icon" />
+                                            </div>
+                                            <h5 class="exploreCardTitle">Daily Planning for Success</h5>
+                                            <p class="exploreCardText">
+                                                Say goodbye to chaos and hello to organized productivity! Dicip facilitates easy daily planning, allowing you to break down your goals into manageable tasks.
+                                            </p>
+                                            <p class="exploreCardText">
+                                                With a user-friendly interface, you can prioritize, schedule, and track progress through daily reflection. The result? A well-planned and structured day, enhanced productivity, and a sense of accomplishment.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                           
+
+                                        <div class="exploreCarouselCard  swiper-slide">
+                                            <div class="exploreContentCont">
+                                                <div class="exploreIconCont">
+                                                    <img src="https://treasuryworks.com/Image/clock.svg" alt="clock_icon" />
+                                                </div>
+                                                <h5 class="exploreCardTitle">Mastering Time Management</h5>
+                                                <p class="exploreCardText">
+                                                    Time is a valuable resource, and Dicip understands its significance. Leverage our time management tools to make the most of every minute.
+                                                </p>
+                                                <p class="exploreCardText">
+                                                    Parents can allocate quality time for their children, spending time planning and goal setting together. Teachers can optimize lesson planning, and students can efficiently balance their schoolwork load and extracurricular activities.
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="exploreCarouselCard  swiper-slide">
+                                            <div class="exploreContentCont">
+                                            <div class="exploreIconCont">
+                                                <img src="https://treasuryworks.com/Image/workgroup.svg" alt="workgroup_icon" />
+                                            </div>
+                                            <h5 class="exploreCardTitle">Collaborate for Success</h5>
+                                            <p class="exploreCardText">
+                                                Dicip fosters collaboration among parents, teachers, and students. Share goals, progress, and insights, creating a supportive community that accelerates growth.
+                                            </p>
+                                            <p class="exploreCardText">
+                                                The hope is that the younger generation can be guided by the productive example of their elders. Together, we can build a foundation for success and productivity.
+                                            </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="exploreCarouselCard  swiper-slide">
+                                            <div class="exploreContentCont">
+                                            <div class="exploreIconCont">
+                                                <img src="https://treasuryworks.com/Image/run_track.svg" alt="run_track_icon" />
+                                            </div>
+                                            <h5 class="exploreCardTitle">Elevate Your Productivity Journey</h5>
+                                            <p class="exploreCardText">
+                                                Are you ready to unlock your full potential? Join the Dicip community today and begin a journey towards enhanced productivity, effective goal-setting, and optimized time management.
+                                            </p>
+                                            <p class="exploreCardText">
+                                                Together, let’s make every day count!
+                                            </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="exploreCarouselCard  swiper-slide">
+                                    <div class="exploreContentCont">
+                                            <button class="signUpBtn align-self-center">
+                                            <a href=SignUp/Accounts class="signUpLink">Sign Up</a>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                           
+                        </div>
+                    <div class="d-flex flex-row justify-content-center align-items-center align-self-center">
+                        <button id="exploreSignUpButton" class="signUpBtn mt-4">
+                            <a href="https://treasuryworks.com/SignUp/Accounts" class="signUpLink">Sign Up</a>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+    </div>
+    <footer class="footer-section text-white py-3 text-center m-0 ">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <p>Copyright © Designed & Developed By Treasury Works 2024</p>
+            </div>
+            
+            <div>
+                <button class="btn btn-primary" onclick="openNav()">Contact Us</button>
+          </div>
+        </div>
+    </footer>
+    <!-- <footer b-9776f52uie class="border-top footer text-muted d-flex">
+        <div b-9776f52uie class="container ">
+            &copy; 2023 - TW.Web - <a href="/Privacy">Privacy</a>
+        </div>
+        <div>
+              <button class="btn btn-primary" onclick="openNav()">Contact Us</button>
+        </div>
+    </footer> -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" placeholder="Enter 1st name" class="form-control" id="firstName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" placeholder="Enter last name" class="form-control" id="lastName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">Email address</label>
+                    <input type="email" placeholder="Enter your email" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="message">Mobile No.</label>
+                    <input class="form-control" placeholder="Enter your mobile number" id="message"></input>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Message</label>
+                <textarea  type="text" placeholder="Type your message" class="form-control" id="exampleInputPassword1"></textarea>
+              </div>
+            
+            <button class="signUpBtn align-self-center">
+                <a href="#" class="signUpLink">SUBMIT</a>
+                </button>
+          </form>
+        
+    </div>
+   
+    <script src="/Explore/js/ExploreJs.js"></script>
+    <script src="https://treasuryworks.com/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://treasuryworks.com/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://treasuryworks.com/js/site.js?v=eK2YAC1Nr5omHxiA8GWbxbjtPJtjh0ubEX48mF9K514"></script>
+    <script src="https://treasuryworks.com/lib/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="https://treasuryworks.com/lib/DataTables/datatables.min.js"></script>
+    <script src="https://treasuryworks.com/lib/DataTables/Responsive-2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://treasuryworks.com/lib/DataTables/RowReorder-1.4.1/js/dataTables.rowReorder.min.js"></script>
+    <script src="https://treasuryworks.com/js/twWeb.min.js?v=uCehcikbJLtULiIlGCL3ypwrvbNRIGed6EGBOmx66Vs"></script>
+
+    <script src="https://treasuryworks.com/lib/swiper/package/swiper-bundle.min.js"></script>
+    <script src="https://treasuryworks.com/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://treasuryworks.com/lib/DataTables/datatables.js"></script>
+    <!-- <script src="https://treasuryworks.com/TW.Web.scripts.js"></script> -->
+    <script src="https://treasuryworks.com/js/carousel.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://treasuryworks.com/_content/AspNetCoreHero.ToastNotification/notyf.min.css">
+
+<script src="https://treasuryworks.com/_content/AspNetCoreHero.ToastNotification/notyf.min.js"></script>
+<!-- bootsrap cnds -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- end bootstrap cnds -->
+<script>
+    const notyf = new Notyf({"duration":8000,"position":{"x":"right","y":"bottom"},"dismissible":true,"ripple":true,"types":[{"type":"success","background":"#28a745"},{"type":"error","background":"#dc3545"},{"type":"warning","background":"orange","className":"text-dark","icon":{"className":"fa fa-warning text-dark","tagName":"i"}},{"type":"info","background":"#17a2b8","icon":{"className":"fa fa-info text-white","tagName":"i"}},{"type":"custom","background":"black"}]});
+</script>
+<script type="text/javascript">
+
+    function toastNotifySuccess(message, duration) {
+        if (duration) { notyf.success({ message: message, duration: duration }); }
+        else { notyf.success({ message: message }); }
+    }
+    function toastNotifyError(message, duration) {
+        if (duration) { notyf.error({ message: message, duration: duration }); }
+        else { notyf.error({ message: message }); }
+    }
+    function toastNotifyWarning(message, duration) {
+        if (duration) { notyf.open({ type: 'warning', message: message, duration: duration }); }
+        else { notyf.open({ type: 'warning', message: message }); }
+
+    }
+    function toastNotifyInformation(message, duration) {
+        if (duration) { notyf.open({ type: 'info', message: message, duration: duration }); }
+        else { notyf.open({ type: 'info', message: message }); }
+
+    }
+    function toastNotifyCustom(message, duration, color, iconClass) {
+
+        var lightOrDarkClassName = pickTextColorBasedOnBgColorAdvanced(color);
+        var iconClassName = iconClass.concat(' ').concat(lightOrDarkClassName);
+        if (duration) {
+            notyf.open({
+                type: 'custom',
+                message: message,
+                duration: duration,
+                className: lightOrDarkClassName,
+                background: color,
+                icon: {
+                    className: iconClassName,
+                    tagName: 'i'
+                }
+            });
+        }
+        else {
+            notyf.open({
+                type: 'custom',
+                message: message,
+                className: lightOrDarkClassName,
+                background: color,
+                icon: {
+                    className: iconClassName,
+                    tagName: 'i'
+                }
+            });
+        }
+
+    }
+    function colourNameToHex(colour) {
+        var colours = {
+            "aliceblue": "#f0f8ff", "antiquewhite": "#faebd7", "aqua": "#00ffff", "aquamarine": "#7fffd4", "azure": "#f0ffff",
+            "beige": "#f5f5dc", "bisque": "#ffe4c4", "black": "#000000", "blanchedalmond": "#ffebcd", "blue": "#0000ff", "blueviolet": "#8a2be2", "brown": "#a52a2a", "burlywood": "#deb887",
+            "cadetblue": "#5f9ea0", "chartreuse": "#7fff00", "chocolate": "#d2691e", "coral": "#ff7f50", "cornflowerblue": "#6495ed", "cornsilk": "#fff8dc", "crimson": "#dc143c", "cyan": "#00ffff",
+            "darkblue": "#00008b", "darkcyan": "#008b8b", "darkgoldenrod": "#b8860b", "darkgray": "#a9a9a9", "darkgreen": "#006400", "darkkhaki": "#bdb76b", "darkmagenta": "#8b008b", "darkolivegreen": "#556b2f",
+            "darkorange": "#ff8c00", "darkorchid": "#9932cc", "darkred": "#8b0000", "darksalmon": "#e9967a", "darkseagreen": "#8fbc8f", "darkslateblue": "#483d8b", "darkslategray": "#2f4f4f", "darkturquoise": "#00ced1",
+            "darkviolet": "#9400d3", "deeppink": "#ff1493", "deepskyblue": "#00bfff", "dimgray": "#696969", "dodgerblue": "#1e90ff",
+            "firebrick": "#b22222", "floralwhite": "#fffaf0", "forestgreen": "#228b22", "fuchsia": "#ff00ff",
+            "gainsboro": "#dcdcdc", "ghostwhite": "#f8f8ff", "gold": "#ffd700", "goldenrod": "#daa520", "gray": "#808080", "green": "#008000", "greenyellow": "#adff2f",
+            "honeydew": "#f0fff0", "hotpink": "#ff69b4",
+            "indianred ": "#cd5c5c", "indigo": "#4b0082", "ivory": "#fffff0", "khaki": "#f0e68c",
+            "lavender": "#e6e6fa", "lavenderblush": "#fff0f5", "lawngreen": "#7cfc00", "lemonchiffon": "#fffacd", "lightblue": "#add8e6", "lightcoral": "#f08080", "lightcyan": "#e0ffff", "lightgoldenrodyellow": "#fafad2",
+            "lightgrey": "#d3d3d3", "lightgreen": "#90ee90", "lightpink": "#ffb6c1", "lightsalmon": "#ffa07a", "lightseagreen": "#20b2aa", "lightskyblue": "#87cefa", "lightslategray": "#778899", "lightsteelblue": "#b0c4de",
+            "lightyellow": "#ffffe0", "lime": "#00ff00", "limegreen": "#32cd32", "linen": "#faf0e6",
+            "magenta": "#ff00ff", "maroon": "#800000", "mediumaquamarine": "#66cdaa", "mediumblue": "#0000cd", "mediumorchid": "#ba55d3", "mediumpurple": "#9370d8", "mediumseagreen": "#3cb371", "mediumslateblue": "#7b68ee",
+            "mediumspringgreen": "#00fa9a", "mediumturquoise": "#48d1cc", "mediumvioletred": "#c71585", "midnightblue": "#191970", "mintcream": "#f5fffa", "mistyrose": "#ffe4e1", "moccasin": "#ffe4b5",
+            "navajowhite": "#ffdead", "navy": "#000080",
+            "oldlace": "#fdf5e6", "olive": "#808000", "olivedrab": "#6b8e23", "orange": "#ffa500", "orangered": "#ff4500", "orchid": "#da70d6",
+            "palegoldenrod": "#eee8aa", "palegreen": "#98fb98", "paleturquoise": "#afeeee", "palevioletred": "#d87093", "papayawhip": "#ffefd5", "peachpuff": "#ffdab9", "peru": "#cd853f", "pink": "#ffc0cb", "plum": "#dda0dd", "powderblue": "#b0e0e6", "purple": "#800080",
+            "rebeccapurple": "#663399", "red": "#ff0000", "rosybrown": "#bc8f8f", "royalblue": "#4169e1",
+            "saddlebrown": "#8b4513", "salmon": "#fa8072", "sandybrown": "#f4a460", "seagreen": "#2e8b57", "seashell": "#fff5ee", "sienna": "#a0522d", "silver": "#c0c0c0", "skyblue": "#87ceeb", "slateblue": "#6a5acd", "slategray": "#708090", "snow": "#fffafa", "springgreen": "#00ff7f", "steelblue": "#4682b4",
+            "tan": "#d2b48c", "teal": "#008080", "thistle": "#d8bfd8", "tomato": "#ff6347", "turquoise": "#40e0d0",
+            "violet": "#ee82ee",
+            "wheat": "#f5deb3", "white": "#ffffff", "whitesmoke": "#f5f5f5",
+            "yellow": "#ffff00", "yellowgreen": "#9acd32"
+        };
+
+        if (typeof colours[colour.toLowerCase()] != 'undefined')
+            return colours[colour.toLowerCase()];
+
+        return false;
+    }
+    function pickTextColorBasedOnBgColorAdvanced(bgColor) {
+
+        var hexColor = colourNameToHex(bgColor);
+        var color = (bgColor.charAt(0) === '#') ? bgColor.substring(1, 7) : hexColor.substring(1, 7);
+        var r = parseInt(color.substring(0, 2), 16); // hexToR
+        var g = parseInt(color.substring(2, 4), 16); // hexToG
+        var b = parseInt(color.substring(4, 6), 16); // hexToB
+        var uicolors = [r / 255, g / 255, b / 255];
+        var c = uicolors.map((col) => {
+            if (col <= 0.03928) {
+                return col / 12.92;
+            }
+            return Math.pow((col + 0.055) / 1.055, 2.4);
+        });
+        var L = (0.2126 * c[0]) + (0.7152 * c[1]) + (0.0722 * c[2]);
+        return (L > 0.179) ? 'text-dark' : 'text-white';
+    }
+</script>
+    
+</body>
+</html>

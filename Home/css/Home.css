@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+body {
+    font-family: 'Lexend';
+    background-color: ghostwhite;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'Lexend';
+}
+p, a, button{
+    font-size: 12px;
+}
+h1, h3, h4, h5, h6{
+    font-size: 16px;
+}
+.adminLoginBtn{
+    background-color: #3C3C3B;
+    color: white;
+}
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    background: url('/Image/image\ 1.svg') no-repeat center center;
+    background-size: cover;
+    /* min-height: 304px; */
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 51, 102, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    min-height: 150px;
+    /* min-height: 305px; */
+}
+
+.heroText {
+    max-width: 50%;
+    text-align: left;
+}
+.heroText p{
+    color: white;
+}
+
+.scheduleCall{
+    background-color: #9BBD4A;
+    border-radius: 50px;
+    
+}
+.heroText h2 {
+    /* font-size: 2.5rem; */
+    margin-bottom: 20px;
+    
+}
+h2{
+    color: #19446A;
+}
+p{
+    color: #3C3C3B;
+}
+.heroText p {
+    margin-bottom: 0px;
+}
+
+.hero-section .btn {
+    background-color: #9BBD4A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .btn img {
+    margin-right: 10px;
+}
+
+/* Services Section Styles */
+.service-img {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 215px;
+    margin-left: 0;
+}
+
+.service-img img {
+    max-width: 90%;
+    border-radius: 20px;
+}
+.productHeading {
+    background-color: #9BBD4A;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.productHeading h2 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+.requestCallBtn{
+    background-color: #9BBD4A;
+    max-width: 38%;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.exploreBtn{
+    background-color: #9BBD4A;
+    max-width: 38%;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.productImg{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 306px;
+    min-height: 237.63px;
+    margin-right: 163px;
+    margin-left: 0;
+}
+.dicipText{
+    color: #19446A;
+}
+.footer-section{
+    background-color: #19446A;
+    min-width: 100%;
+}
+.footer-section p{
+    margin: 0;
+    color: white;
+}
+.sidebar {
+    height: 100%; 
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #E7F5FF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+    z-index: 1;
+}
+.sidebar form {
+    padding: 15px;
+}
+
+.sidebar .btn {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Close button */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+}
+.signUpBtn {
+    background-color: #2A9EEE;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 10px;
+
+}
+.signUpBtn a{
+    
+    color: white;
+}
+@media (max-width: 767px) {
+    
+    .navbar-nav{
+        align-items: flex-end;
+    }
+    .heroText {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-section-layer {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section .btn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .service-text {
+        text-align: center;
+    }
+
+    .requestCallBtn {
+        max-width: 100% !important;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .exploreBtn {
+        max-width: 100% !important;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .productImg {
+    margin-left: 168px;
+    min-width: 306px !important;
+    min-height: 237.63px !important;
+    }
+    .service-img{
+        margin-left: 9px !important;
+    }
+    .productHeading {
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    .productHeading h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-section {
+        padding: 10px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+    }
+    .hero-section{
+        min-height: 180px;
+   }
+   .hero-section-layer{
+       min-height: 180px;
+   }
+   
+}
+@media (max-width: 492px) {
+    .hero-section{
+        min-height: 183px;
+   }
+   .hero-section-layer{
+       min-height: 183px;
+   }
+   .service-img{
+    max-width: 100%;
+   }
+   .productImg {
+    margin-left: 117px;
+    min-height: 278.49px !important;
+    min-width: 361px !important;
+   }
+}
+@media (max-width: 992px) {
+    .service-img{
+        min-width: 245px;
+        margin-left: 110px;
+    }
+    .productImg {
+        min-width: 245px;
+        min-height: 192.31;
+        margin-right: 107px;
+    }
+    .requestCallBtn, .exploreBtn{
+        max-width: 64%;
+    }
+}
+@media (max-width: 492px) {
+
+}
